@@ -12,9 +12,7 @@ export default function Footer() {
 
   const quickLinks = [
     { label: 'About', href: '#about' },
-    { label: 'Skills', href: '#skills' },
     { label: 'Projects', href: '#projects' },
-    { label: 'Experience', href: '#experience' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -33,10 +31,10 @@ export default function Footer() {
           <div className="mb-8 grid gap-8 md:grid-cols-3">
             {/* Brand Section */}
             <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-purple-400">Alex Johnson</h3>
+              <h3 className="text-2xl font-bold text-purple-400">GeekJS</h3>
               <p className="text-slate-400">
-                Full-Stack Software Engineer passionate about creating exceptional digital
-                experiences.
+                Software Engineer based in Ghana(West Africa). Passionate about creating exceptional
+                digital experiences.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((link, index) => (
@@ -73,10 +71,12 @@ export default function Footer() {
             {/* Contact Info */}
             <div className="space-y-4">
               <h4 className="font-semibold text-white">Get In Touch</h4>
-              <div className="space-y-2 text-slate-400">
-                <p>San Francisco, CA</p>
-                <p>alex.johnson@email.com</p>
-                <p>+1 (555) 123-4567</p>
+              <div className="flex flex-col gap-2 text-slate-400">
+                <p>Accra, Ghana</p>
+                <a target="_blank" href={'mailto:fiifipius@gmail.com'}>
+                  fiifipius@gmail.com
+                </a>
+                <a href={'tel:+233542398441'}>+233 542-39-8441</a>
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@ export default function Footer() {
           {/* Bottom Section */}
           <div className="flex flex-col items-center justify-between border-t border-slate-700 pt-8 md:flex-row">
             <p className="mb-4 text-sm text-slate-400 md:mb-0">
-              © {currentYear} Alex Johnson. All rights reserved.
+              © {currentYear} GeekJS. All rights reserved.
             </p>
             <p className="flex items-center text-sm text-slate-400">
               Made with <Heart className="mx-1 h-4 w-4 fill-current text-red-400" /> using React &

@@ -29,7 +29,14 @@ export default function About() {
     },
   ];
 
-  const interests = ['Open Source', 'AI/ML', 'Web3', 'Mobile Dev', 'DevOps', 'UI/UX'];
+  const interests = [
+    'Mobile & Web Architecture',
+    'Frameworks/Libraries',
+    'Open Source',
+    'Finance',
+    'Reading',
+    'Family',
+  ];
 
   return (
     <section id="about" className="relative bg-slate-800/50 py-20">
@@ -39,7 +46,8 @@ export default function About() {
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">About Me</h2>
             <p className="mx-auto max-w-2xl text-lg text-slate-400">
-              Passionate about creating digital solutions that make a difference
+              Software Engineer based in Ghana(West Africa). Passionate about creating digital
+              solutions that make a difference.
             </p>
           </div>
 
@@ -51,14 +59,13 @@ export default function About() {
                   My Journey
                 </h3>
                 <p className="mb-4 text-slate-400">
-                  I'm a passionate software engineer with over 6 years of experience building web
-                  applications and scalable systems. I love turning complex problems into simple,
-                  beautiful, and intuitive solutions.
+                  I'm a passionate software engineer with years of experience building mobile & web
+                  applications and contributing to community packages. I love turning complex
+                  problems into simple, beautiful, and intuitive solutions.
                 </p>
                 <p className="mb-4 text-slate-400">
-                  When I'm not coding, you can find me exploring new technologies, contributing to
-                  open-source projects, or sharing knowledge with the developer community through
-                  blog posts and mentoring.
+                  When I'm not coding, you can find me exploring new technologies, reading financial
+                  books and talking to new people about new tech stuff.
                 </p>
                 <p className="text-slate-400">
                   I believe in writing clean, maintainable code and creating exceptional user
@@ -69,7 +76,7 @@ export default function About() {
               <div>
                 <h4 className="mb-3 flex items-center font-semibold text-white">
                   <Heart className="mr-2 h-5 w-5 text-red-400" />
-                  Interests & Passions
+                  Interests
                 </h4>
                 <div className="flex flex-wrap gap-2">
                   {interests.map((interest, index) => (

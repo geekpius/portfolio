@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Badge } from '@/components/ui/badge';
-import { Mail, MapPin, Phone, Send, MessageCircle, Calendar } from 'lucide-react';
+import { Mail, MapPin, Phone, Send, MessageCircle } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -42,20 +42,20 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'alex.johnson@email.com',
-      href: 'mailto:alex.johnson@email.com',
+      value: 'fiifipius@gmail.com',
+      href: 'mailto:fiifipius@gmail.com',
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+233 542-39-8441',
+      href: 'tel:+233542398441',
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com/?q=San Francisco, CA',
+      value: 'Accra, Ghana',
+      href: 'https://www.google.com/maps/place/Accra/@5.5913738,-0.2621307,12z/data=!3m1!4b1!4m6!3m5!1s0xfdf9084b2b7a773:0xbed14ed8650e2dd3!8m2!3d5.5592846!4d-0.1974306!16zL20vMGZueWM?entry=ttu&g_ep=EgoyMDI1MDYwNC4wIKXMDSoASAFQAw%3D%3D',
     },
   ];
 
@@ -119,18 +119,18 @@ export default function Contact() {
                 ))}
               </div>
 
-              <div className="rounded-lg border border-purple-500/20 bg-purple-500/5 p-6">
-                <div className="mb-3 flex items-center">
-                  <Calendar className="mr-2 h-5 w-5 text-purple-400" />
-                  <h4 className="font-semibold text-white">Schedule a Call</h4>
-                </div>
-                <p className="mb-4 text-sm text-slate-400">
-                  Prefer to talk? Schedule a 30-minute call to discuss your project in detail.
-                </p>
-                <Button className="w-full border-purple-500/30 bg-transparent text-purple-300 hover:bg-purple-500/10">
-                  Book a Meeting
-                </Button>
-              </div>
+              {/*<div className="rounded-lg border border-purple-500/20 bg-purple-500/5 p-6">*/}
+              {/*  <div className="mb-3 flex items-center">*/}
+              {/*    <Calendar className="mr-2 h-5 w-5 text-purple-400" />*/}
+              {/*    <h4 className="font-semibold text-white">Schedule a Call</h4>*/}
+              {/*  </div>*/}
+              {/*  <p className="mb-4 text-sm text-slate-400">*/}
+              {/*    Prefer to talk? Schedule a 30-minute call to discuss your project in detail.*/}
+              {/*  </p>*/}
+              {/*  <Button className="w-full border-purple-500/30 bg-transparent text-purple-300 hover:bg-purple-500/10">*/}
+              {/*    Book a Meeting*/}
+              {/*  </Button>*/}
+              {/*</div>*/}
             </div>
 
             {/* Contact Form */}

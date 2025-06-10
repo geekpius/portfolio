@@ -16,9 +16,7 @@ export default function Header() {
 
   const navItems = [
     { href: '#about', label: 'About' },
-    { href: '#skills', label: 'Skills' },
     { href: '#projects', label: 'Projects' },
-    { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
   ];
 
@@ -30,6 +28,13 @@ export default function Header() {
     setIsMenuOpen(false);
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <header
       className={`fixed top-0 z-50 w-full ${
@@ -39,10 +44,10 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
           <button
-            onClick={() => scrollToSection('#')}
-            className="text-2xl font-bold text-purple-400 transition-opacity hover:opacity-80"
+            onClick={scrollToTop}
+            className="cursor-pointer text-2xl font-bold text-purple-400 transition-opacity hover:opacity-80"
           >
-            Alex Johnson
+            GeekJS
           </button>
 
           {/* Desktop Navigation */}
@@ -51,7 +56,7 @@ export default function Header() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-slate-400 transition-colors hover:text-purple-400"
+                className="cursor-pointer text-slate-400 transition-colors hover:text-purple-400"
               >
                 {item.label}
               </button>
