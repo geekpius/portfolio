@@ -18,7 +18,7 @@ export default function Experience() {
         'Reduced system downtime by 40% through improved monitoring',
         'Implemented automated testing reducing bugs by 35%',
       ],
-      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'PostgreSQL', 'Kubernetes'],
+      technologies: ['React', 'Node.js', 'AWS', 'Docker', 'PostgreSQL', 'Kubernetes', 'Flutter'],
     },
     {
       title: 'Full-Stack Developer',
